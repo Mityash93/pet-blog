@@ -1,11 +1,12 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { Counter } from './component/Counter'
 import App from './App'
-const root = createRoot(document.getElementById('root') as HTMLElement)
+import { BrowserRouter } from 'react-router-dom'
+
+const root = createRoot(document.getElementById('root'))
 
 root.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
 )

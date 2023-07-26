@@ -7,5 +7,6 @@ export const buildDevServer = (
   return {
     port: option.port,
     open: true,
+    historyApiFallback: true,
   }
 }
