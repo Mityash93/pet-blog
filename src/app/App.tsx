@@ -1,9 +1,10 @@
 import classNames from 'classnames'
-import { Link } from 'react-router-dom'
 
+import { useTheme } from './providers'
 import { AppRouter } from './providers/router'
 import './styles/index.scss'
-import { useTheme } from './providers'
+import { Link } from 'react-router-dom'
+import { Navbar } from 'widgets/Navbar'
 
 export enum Theme {
   DARK = 'dark',
@@ -15,10 +16,9 @@ const App = () => {
 
   return (
     <div className={classNames('app', {}, [theme])}>
-      <button onClick={toggleTheme}>TOGGLE</button>
-      <Link to={'/'}>Главная</Link>
-      <Link to={'/about'}>О сайте</Link>
+      <Navbar />
       <AppRouter />
+      <button onClick={toggleTheme}>TOGGLE</button>
     </div>
   )
 }
