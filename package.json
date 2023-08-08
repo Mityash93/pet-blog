@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
     "@svgr/webpack": "^8.0.1",
     "@types/node": "^20.4.4",
     "@types/react": "^18.2.15",
@@ -19,6 +21,8 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/webpack": "^5.28.1",
     "@types/webpack-dev-server": "^4.7.2",
+    "babel-loader": "^9.1.3",
+    "babel-plugin-i18next-extract": "^0.9.0",
     "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
@@ -35,8 +39,12 @@
   },
   "dependencies": {
     "classnames": "^2.3.2",
+    "i18next": "^23.4.1",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "i18next-http-backend": "^2.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^13.0.3",
     "react-router-dom": "^6.14.2"
   }
 }
